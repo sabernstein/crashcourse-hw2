@@ -5,7 +5,9 @@ import notes from "../notes";
 function App() {
   return (
     <div>
-      <h1> Keeper </h1>
+      <header>
+        <h1> Keeper </h1>
+      </header>
       {notes.map(function(note) {
         return(
           <Note
@@ -14,7 +16,9 @@ function App() {
           />
         );
       })}
-      <p> Copyright © 2021 </p>
+      <footer>
+        <p> Copyright © 2021 </p>
+      </footer>
     </div>
   );
 }
